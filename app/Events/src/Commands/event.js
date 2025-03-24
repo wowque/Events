@@ -249,18 +249,18 @@ module.exports = async (client, appearance, config, db, args, argsF, interaction
                 }).catch(() => {});
 
 
-                // const scheduledEvent = await guild.scheduledEvents.create({
-                //     name: `${eventOfCategory.name}`,
-                //     scheduledStartTime: new Date(Date.now() + 5 * 1000), 
-                //     scheduledEndTime: new Date(Date.now() + 24 * 60 * 60 * 1000),
-                //     privacyLevel: GuildScheduledEventPrivacyLevel.GuildOnly, 
-                //     entityType: GuildScheduledEventEntityType.Voice, 
-                //     channel: eventVoiceChannel.id, 
-                //     description: `${eventOfCategory.embed.info.description ? eventOfCategory.embed.info.description : 'Отсутствует'}`,
-                //     image: eventOfCategory.embed.info.image || null
-                // }).catch(() => {});
+                const scheduledEvent = await guild.scheduledEvents.create({
+                    name: `${eventOfCategory.name}`,
+                    scheduledStartTime: new Date(Date.now() + 5 * 1000), 
+                    scheduledEndTime: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                    privacyLevel: GuildScheduledEventPrivacyLevel.GuildOnly, 
+                    entityType: GuildScheduledEventEntityType.Voice, 
+                    channel: eventVoiceChannel.id, 
+                    description: `${eventOfCategory.embed.info.description ? eventOfCategory.embed.info.description : 'Отсутствует'}`,
+                    image: eventOfCategory.embed.info.image || null
+                }).catch(() => {});
                 
-                // scheduledEvent.setStatus(2).catch(() => {});
+                scheduledEvent.setStatus(2).catch(() => {});
 
 
                 async function errorNoEventsOwnerMessage (One) {
@@ -1568,18 +1568,18 @@ module.exports = async (client, appearance, config, db, args, argsF, interaction
                 parameters.announcementMessage = false;
 
 
-                // const scheduledEvent = await guild.scheduledEvents.create({
-                //     name: `${eventOfCategory.name}`,
-                //     scheduledStartTime: new Date(Date.now() + 5 * 1000), 
-                //     scheduledEndTime: new Date(Date.now() + 24 * 60 * 60 * 1000),
-                //     privacyLevel: GuildScheduledEventPrivacyLevel.GuildOnly, 
-                //     entityType: GuildScheduledEventEntityType.Voice, 
-                //     channel: eventVoiceChannel.id, 
-                //     description: `${eventOfCategory.embed.info.description ? eventOfCategory.embed.info.description : 'Отсутствует'}`,
-                //     image: eventOfCategory.embed.info.image || null
-                // }).catch(() => {});
+                const scheduledEvent = await guild.scheduledEvents.create({
+                    name: `${eventOfCategory.name}`,
+                    scheduledStartTime: new Date(Date.now() + 5 * 1000), 
+                    scheduledEndTime: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                    privacyLevel: GuildScheduledEventPrivacyLevel.GuildOnly, 
+                    entityType: GuildScheduledEventEntityType.Voice, 
+                    channel: eventVoiceChannel.id, 
+                    description: `${eventOfCategory.embed.info.description ? eventOfCategory.embed.info.description : 'Отсутствует'}`,
+                    image: eventOfCategory.embed.info.image || null
+                }).catch(() => {});
 
-                // scheduledEvent.setStatus(2).catch(() => {});
+                scheduledEvent.setStatus(2).catch(() => {});
                 
                 
                 parameters.teams = {};
@@ -4493,18 +4493,18 @@ module.exports = async (client, appearance, config, db, args, argsF, interaction
                 parameters.announcementMessage = false;
 
 
-                // const scheduledEvent = await guild.scheduledEvents.create({
-                //     name: `${eventOfCategory.name}`,
-                //     scheduledStartTime: new Date(Date.now() + 5 * 1000), 
-                //     scheduledEndTime: new Date(Date.now() + 24 * 60 * 60 * 1000),
-                //     privacyLevel: GuildScheduledEventPrivacyLevel.GuildOnly, 
-                //     entityType: GuildScheduledEventEntityType.Voice, 
-                //     channel: eventVoiceChannel.id, 
-                //     description: `${eventOfCategory.embed.info.description ? eventOfCategory.embed.info.description : 'Отсутствует'}`,
-                //     image: eventOfCategory.embed.info.image || null
-                // }).catch(() => {});
+                const scheduledEvent = await guild.scheduledEvents.create({
+                    name: `${eventOfCategory.name}`,
+                    scheduledStartTime: new Date(Date.now() + 5 * 1000), 
+                    scheduledEndTime: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                    privacyLevel: GuildScheduledEventPrivacyLevel.GuildOnly, 
+                    entityType: GuildScheduledEventEntityType.Voice, 
+                    channel: eventVoiceChannel.id, 
+                    description: `${eventOfCategory.embed.info.description ? eventOfCategory.embed.info.description : 'Отсутствует'}`,
+                    image: eventOfCategory.embed.info.image || null
+                }).catch(() => {});
 
-                // scheduledEvent.setStatus(2).catch(() => {});
+                scheduledEvent.setStatus(2).catch(() => {});
                     
 
                 parameters.announcementMessage = false;
