@@ -1,0 +1,99 @@
+{
+    "main": {
+        "prefix": "!",
+        "action": ["main"],
+        "jsonlist": ["../config.json", "../../../../bots.json", "../../../../guild.json", "../../../../appearance.json"],
+        "jsondb": {
+            "users": {
+                "type": "member",
+                "zeroing": false,
+                "path": "./../../db/Events/users.json",
+                "pathBackup": "./../../db/Events/BACKUP/users.json",
+                "scheme": {
+                    "Events": [],
+                    "ActiveEvent": false
+                }
+            },
+            "guilds": {
+                "type": "guild",
+                "zeroing": false,
+                "path": "./../../db/Events/guilds.json",
+                "pathBackup": "./../../db/Events/BACKUP/guilds.json",
+                "scheme": {
+                    "Events": {
+                        "Active": [],
+                        "Last": []
+                    },
+                    "Punishments": []
+                }
+            },
+            "stats": {
+                "type": "member",
+                "zeroing": false,
+                "path": "./../../db/Events/stats.json",
+                "pathBackup": "./../../db/Events/BACKUP/stats.json",
+                "scheme": {
+                    "Mafia": {
+                        "Городская": {
+                            "rating": 1500,
+                            "all": 0,
+                            "win": 0,
+                            "games": [],
+                            "roles": {
+                                "Мирный житель": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Шериф": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Доктор": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Дон": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Мафия": {
+                                    "all": 0,
+                                    "win": 0
+                                }
+                            }
+                        },
+                        "Классическая": {
+                            "rating": 1500,
+                            "all": 0,
+                            "win": 0,
+                            "games": [],
+                            "roles": {
+                                "Мирный житель": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Шериф": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Дон": {
+                                    "all": 0,
+                                    "win": 0
+                                },
+                                "Мафия": {
+                                    "all": 0,
+                                    "win": 0
+                                }
+                            }
+                        }
+                    },
+                    "Close": {},
+                    "Punishments": []
+                }
+            }
+        }
+    },
+
+    "parameters": {
+    }
+}
