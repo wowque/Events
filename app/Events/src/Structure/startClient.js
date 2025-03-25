@@ -8,7 +8,6 @@ const { Client, GatewayIntentBits } = require('discord.js');
 if (!bots.Events.token) console.error(`\x1b[31m[ERROR]\x1b[0m Unknown bot token;`);
 else {
     
-    
     const client = new Client({
         intents: [
             GatewayIntentBits.Guilds,
