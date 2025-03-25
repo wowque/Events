@@ -22,24 +22,4 @@ module.exports = async (client, appearance, config, db) => {
         
     };
 
-    const guild = await client.guilds.fetch(appearance.guild);
-    setInterval(async () => {
-
-        for (const channel of guild.channels.cache) {
-        
-            const channelfetch = await guild.channels.fetch(channel[0]);
-            if (channelfetch.type == 2 && channelfetch.parentId == appearance.channels.CategoryLove && channelfetch.id !== appearance.channels.Love) {
-                
-                setTimeout(() => {
-
-                    if (!channelfetch.members || !channelfetch.members.size) channelfetch.delete().catch(() => {});
-                    
-                }, 1500);
-
-            };
-
-        };
-
-    }, 3000);
-
 };
