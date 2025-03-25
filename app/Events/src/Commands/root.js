@@ -385,7 +385,7 @@ module.exports = async (client, appearance, config, db, args, argsF, interaction
                     tempPage -= 1;
                     if (tempPage <= 0) tempPage = 1;
                     
-                    i.update(await getMessage (tempPage))//.catch(() => {});
+                    i.update(await getMessage (tempPage)).catch(() => {});
                     
                     break;
     
@@ -397,7 +397,7 @@ module.exports = async (client, appearance, config, db, args, argsF, interaction
                     if (tempPage == 1) tempPage++;
                     if (tempPage > Math.ceil(eventsOfGo.length / 10)) tempPage = Math.ceil(eventsOfGo.length / 10);
                     
-                    i.update(await getMessage (tempPage))//.catch(() => {});
+                    i.update(await getMessage (tempPage)).catch(() => {});
                     
                     break;
     
