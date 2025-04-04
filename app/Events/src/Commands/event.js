@@ -308,7 +308,7 @@ module.exports = async (client, appearance, config, db, args, argsF, interaction
                 );
 
                 const infoMessage = await eventInfoChannel.send({  
-                    // content: `https://discord.com/events/${guild.id}/${!scheduledEvent ? scheduledEvent.id : '0'}`,
+                    content: `https://discord.com/events/${guild.id}/${!scheduledEvent ? scheduledEvent.id : '0'}`,
                     embeds: infoEmbeds,
                     components: [
                         {
